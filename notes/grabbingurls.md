@@ -4,7 +4,7 @@ Grabbing Data URLS
 ```
 https://api.scratch.mit.edu/projects/[Project ID]
 ```
-> Grabing Cloud Data (Logged Cloud Variable Changes
+> Grabing Cloud Data (Logged Cloud Variable Changes)
 ```
 https://clouddata.scratch.mit.edu/logs?projectid=[Project ID]&limit=[Limit]&offset=0
 ```
