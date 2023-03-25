@@ -9,12 +9,14 @@ if platform.system() == "Windows":
 else:
     path = "~/SORA/modules/obj.json"
 
+def curl(url):
+    os.system(f"curl {url} > {path}")
+    return open(f"/Users/{getpass.getuser()}/SORA/modules/obj.json", "r").read()
+    
 def project(pid):
-    os.system(f"curl https://api.scratch.mit.edu/projects/{pid}/ > {path}")
-    obj = open(f"/Users/{getpass.getuser()}/SORA/modules/obj.json", "r").read()
+    obj = curl(f"https://api.scratch.mit.edu/projects/{pid}/")
     src = json.loads(obj)
     token = src["project_token"]
-    os.system(f"curl https://projects.scratch.mit.edu/{pid}?token={token} > {path}")
-    obj = open(f"/Users/{getpass.getuser()}/SORA/modules/obj.json", "r").read()
+    obj = curl(f"curl https://projects.scratch.mit.edu/{pid}?token={token}")
     os.remove(f"/Users/{getpass.getuser()}/SORA/modules/obj.json")
     return obj
