@@ -14,17 +14,3 @@ Note:
 ```
 https://api.scratch.mit.edu/projects/[Project ID]
 ```
-Uploading URLS
----
-> Sett Cloud Variable Websockets
-```json
-{
-  "method":"set"
-  "user":[Username]
-  "project_id":[Project ID]
-  "name":"☁️ [Cloud Variable Name]"
-  "value":[Cloud Value]
-}
-```
-Note:
-  [Cloud Value] is always an integer that overrides the cloud variables value. Test by sending websockets.
