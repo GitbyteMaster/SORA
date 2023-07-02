@@ -2,6 +2,8 @@ import os
 import platform
 import getpass
 import json
+import shutil
+import requests
 
 path = ""
 if platform.system() == "Windows":
@@ -20,3 +22,12 @@ def project(pid):
     obj = curl(f"curl https://projects.scratch.mit.edu/{pid}?token={token}")
     os.remove(f"/Users/{getpass.getuser()}/SORA/modules/obj.json")
     return obj
+
+def loadimage(url, as_file):
+    # https://stackoverflow.com/questions/13137817/how-to-download-image-using-requests
+    response = requests.get(url, stream=True)
+    open(as_file, "a")
+    with open(as_file, 'wb') as file:
+        shutil.copyfileobj(response.raw, file)
+    del response
+
