@@ -1,6 +1,6 @@
 import scratchattach as scratch3
 
-session = scratch3.login("G_bite_Masters", "mypassboy333")
+session = scratch3.login("", "")
 
 pid = "875134025"
 
