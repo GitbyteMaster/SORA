@@ -4,7 +4,8 @@
 
 # Project SORA
 
-[Credits](https://github.com/GitbyteMaster/SORA/blob/main/notes/Credits.md) | [Project](https://scratch.mit.edu/projects/875134025/)
+[Credits](https://github.com/GitbyteMaster/SORA/blob/main/notes/Credits.md) | [Project](https://scratch.mit.edu/projects/875134025/) | [Database Engine (Private)](https://github.com/GitbyteMaster/SORA-database)
+
 </div>
 
 A small project to bring a customized version of Scratch to you with extensions you wouldn't find elsewhere.
