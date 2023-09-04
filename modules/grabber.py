@@ -7,9 +7,9 @@ import requests
 
 path = ""
 if platform.system() == "Windows":
-    path = r"C:\Users\%USERNAME%\SORA\modules\obj.json"
+    path = r"C:\Users\%USERNAME%\soraobj.json"
 else:
-    path = "~/SORA/modules/obj.json"
+    path = "~/soraobj.json"
 
 def curl(url):
     os.system(f"curl {url} > {path}")
