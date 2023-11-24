@@ -4,7 +4,7 @@
 
 # Project SORA
 
-[Credits](https://github.com/GitbyteMaster/SORA/blob/main/notes/Credits.md) | [Project](https://scratch.mit.edu/projects/875134025/) | [Database Engine (Private)](https://github.com/GitbyteMaster/SORA-database)
+[Credits](https://github.com/GitbyteMaster/SORA/blob/main/notes/Credits.md)
 
 </div>
 
