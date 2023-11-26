@@ -2,7 +2,7 @@ import scratchattach as scratch3
 import random
 
 capschar = "QWERTYUIOPASDFGHJKLZXCVBNM"
-rawchar = "qwertyuiopasdfghjklzxcvbnm[]\{}|-=_+;\':\",./<>?~`1234567890!@#$%^&*()  \t"
+rawchar = "qwertyuiopasdfghjklzxcvbnm[]\{}|-=_+;\':\",./<>?~`1234567890!@#$%^&*() \t"
 currentchar = rawchar
 
 def encode(text):
@@ -28,6 +28,7 @@ def decode(text):
 
 account = ""
 def login(username, password):
+  global account
   account = scratch3.login(username, password)
 
 def shuffle():
@@ -36,7 +37,7 @@ def shuffle():
   newchars = []
   suggest = 0
   while not len(newchars) == limit:
-    suggest = random.randint(1, limit)
+    suggest = random.randint(0, limit-1)
     char = ""
     if not len(str(suggest)) == 2:
       char = "0"
@@ -47,8 +48,8 @@ def shuffle():
     newkey = f"{newkey}{x}"
   return newkey
 
-def updatechar()
+def updatechar():
   shuffled = shuffle()
   conn = account.connect_cloud(929963862)
   conn.set_var("key", int(shuffled))
-  currentchar = decode(scratch3.get_var(929963862, "key"))
+  currentchar = decode(scratch3.get_var("929963862", "key"))
