@@ -8,6 +8,7 @@ except ModuleNotFoundError:
     os.system("python -m install scratchattach")
   else:
     os.system("pip install scratchattach")
+  pass
 else:
   pass
 
