@@ -5,7 +5,7 @@ try:
   import scratchattach as scratch3
 except ModuleNotFoundError:
   if platform.system() == "Windows":
-    os.system("python -m install scratchattah")
+    os.system("python -m install scratchattach")
   else:
     os.system("pip install scratchattach")
 else:
