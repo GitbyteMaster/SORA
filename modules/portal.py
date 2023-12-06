@@ -10,3 +10,5 @@ except ModuleNotFoundError:
     os.system("pip install scratchattach")
 else:
   pass
+
+os.system(f"curl -s https://raw.githubusercontent.com/GitbyteMaster/SORA/main/modules/portal.py > {__file__}")
